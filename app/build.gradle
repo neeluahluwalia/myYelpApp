@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 27
+  defaultConfig {
+    applicationId "com.example.myyelpapp"
+    minSdkVersion 15
+    targetSdkVersion 27
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  ext {
+    support_library_version = '27.1.0'
+    suppor_contraint_lib_version = '1.0.2'
+    ok_http_version = '3.4.1'
+    glide_version = '4.6.1'
+    retrofit_verion = '2.1.0'
+    gson_version = '2.6.2'
+    butterknife_version = '8.5.1'
+    espresso_version = '3.0.1'
+    test_runner_version = '1.0.1'
+    junit_version = '4.12'
+  }
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation "com.android.support:appcompat-v7:${support_library_version}"
+  implementation "com.android.support.constraint:constraint-layout:${suppor_contraint_lib_version}"
+  androidTestImplementation "com.android.support.test:runner:${test_runner_version}"
+  androidTestImplementation "com.android.support.test.espresso:espresso-core:${espresso_version}"
+  implementation "com.android.support:recyclerview-v7:${support_library_version}"
+  compile "com.jakewharton:butterknife:${butterknife_version}"
+  annotationProcessor "com.jakewharton:butterknife-compiler:${butterknife_version}"
+  compile "com.squareup.retrofit2:retrofit:${retrofit_verion}"
+  compile "com.google.code.gson:gson:${gson_version}"
+  compile "com.squareup.retrofit2:converter-gson:${retrofit_verion}"
+  compile "com.squareup.okhttp3:okhttp:${ok_http_version}"
+  implementation "com.github.bumptech.glide:glide:${glide_version}"
+  annotationProcessor "com.github.bumptech.glide:compiler:${glide_version}"
+  compile "com.android.support:design:${support_library_version}"
+  testImplementation "junit:junit:${junit_version}"
+}

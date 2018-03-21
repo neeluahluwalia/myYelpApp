@@ -1,0 +1,19 @@
+<resources>
+  <string name="app_name">MyYelpApp</string>
+  <string name="api_key">Bearer DOFB4yIY36ytjZ5fgJ6bhYIu4YBR0PtAHNF0jrppsnQtu1POc2pc6067Gsf0ngiU8INwJzf3ayYoeg4z_21JwIholbtjsJAyjDILAxxTOH_GHYiklSWwuIKEvbetWnYx</string>
+  <string name="search_title">Search Restaurants...</string>
+  <string name="search_by_location">Enter city...</string>
+  <string name="search_location">Search By Location...</string>
+  <string name="sort_title">Sort</string>
+  <string name="default_search_string">ethiopian</string>
+  <string name="review_count">review_count</string>
+  <string name="review_count_text">Review Count</string>
+  <string name="best_match_text">Best Match</string>
+  <string name="best_match">best_match</string>
+  <string name="distance">Distance</string>
+  <string name="rating">Rating</string>
+  <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+  <string name="show_results">Showing Results for "%s" in Toronto</string>
+  <string name="show_location_results">Showing restaurants in "%s" </string>
+  <string name="no_network_connection">No internet connection </string>
+</resources>
